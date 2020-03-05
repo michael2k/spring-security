@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>spring-security-samples</groupId>
-  <artifactId>xml-helloworld</artifactId>
+  <artifactId>xml-tutorial</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
 	<parent>
@@ -16,30 +16,6 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>htmlunit-driver</artifactId>
 		</dependency>
@@ -51,6 +27,7 @@
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>javax.servlet.jsp-api</artifactId>
 			<version>2.3.3</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -63,6 +40,51 @@
 		<dependency>
 			<groupId>org.springframework.integration</groupId>
 			<artifactId>spring-integration-test-support</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>javax.servlet.jsp.jstl-api</artifactId>
+			<version>1.2.2</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>opensymphony</groupId>
+			<artifactId>sitemesh</artifactId>
+			<version>2.4.2</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
 		</dependency>
 	</dependencies>
   <build>
